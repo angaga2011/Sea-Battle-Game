@@ -1,0 +1,11 @@
+body{
+    justify-content: center;
+    align-items: center;
+}
+
+#menu{
+    align-self: center;
+    border: 2px solid black;
+    height: 1000px;
+    width: 750px;
+}
