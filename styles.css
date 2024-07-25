@@ -1,11 +1,75 @@
 body{
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    
 }
 
+
+
 #menu{
+    position: absolute;
+    justify-content: center;
     align-self: center;
     border: 2px solid black;
-    height: 1000px;
-    width: 750px;
+    height: 600px;
+    width: 150px;
+}
+
+button {
+    border: none;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    display: block;
+}
+
+.buttonHover {
+    background-color: red;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+  }
+
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+
+ .header {
+    
+    position: fixed;
+    left: 0;
+    top:0 ;
+    width:100%;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 10px;
+  }
+
+  .popUp{
+    position: absolute;
+    align-self: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+  }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
 }
