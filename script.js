@@ -23,8 +23,20 @@ multiplayerButton.addEventListener("click", startMulti);
 // }
 
 function startMulti(){
+    let popUpBackground = document.createElement("div")
+    popUpBackground.className = "popUpBackground"
+    document.body.appendChild(popUpBackground);
     let popUp = document.createElement("div");
     popUp.className = "popUp"
     document.body.appendChild(popUp);
-    multiplayerButton.style.display = "none";
+    let popUpCancelButton = document.createElement("button.popUpCancelButton")
+    popUpCancelButton.innerText="X";
+    popUp.appendChild(popUpCancelButton);
+    popUpCancelButton.addEventListener("click", function(){
+        popUpCancelButton.remove();
+        popUp.remove();
+        popUpBackground.remove();
+    })
 }
+
+    // multiplayerButton.style.display = "none";
