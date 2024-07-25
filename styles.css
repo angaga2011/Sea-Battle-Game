@@ -3,26 +3,23 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
-  
 }
 
+
 #menu{
-  position: absolute;
+  position: fixed;
   justify-content: center;
   align-self: center;
-  border: 2px solid #021526;
-  height: 400px;
+  height: 150px;
   width: 150px;
 }
 
 button {
   border: none;
   margin: 5px;
-  padding: 10px 20px;
   font-size: 16px;
   width: 140px;
-  height: 50px;
+  height: 60px;
   border-radius: 5px;
   display: block;
   background-color: #073964;
@@ -35,13 +32,26 @@ button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
 }
 
+img{
+  width: 100%; 
+  height: 100%;
+  position: fixed;
+  top: 45px;
+  
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
 
 .footer {
-  position: fixed;
+  position: fixed;  
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #021526;
+  height: 50px;
+  background-color: #04223d;
   color: white;
   text-align: center;
 }
@@ -52,45 +62,92 @@ button:hover {
   top:0 ;
   width:100%;
   text-align: center;
-  background: #021526;
+  background: #04223d;
   color: white;
   font-size: 10px;
   
 }
 
+/* .topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+} */
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #04223d;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+.topnav #myLinks {
+  display: none;
+}
+
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
+  color: white;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  display: block;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.topnav a.icon {
+  background: #04223d;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
+
+.active {
+  background-color: #04223d;
+  color: white;
+}
+
+
+
+
+
+
+
+
+.inputs{
+  align-self: center;
+  display: block;
+  margin-left: 15%;
+  margin-top: 20px;
 }
 
 .input{
-  align-self: center;
-  display: block;
-  margin: 5px;
-  padding: 10px 20px;
+  margin: 2px;
+  margin-top: 15px;
+  border: none;
   font-size: 16px;
-  width: 140px;
+  text-align: center;
+  padding: 10px 20px;
+  width: 170px;
   height: 50px;
   border-radius: 5px;
+  display: block;
+  background-color: #073964;
+  color: white;
 }
 
 .popUp{
   position: absolute;
-  align-self: center;
-  align-items: center;
-  border: 1px solid #021526;
-  height: 450px;
-  width: 700px;
+  display: fixed;
+  border: 2px solid #021526;
+  width: 300px;
+  height: 260px;
   background-color: #6EACDA;
+  border-radius: 5px;
 }
 
 .popUpBackground{
@@ -105,14 +162,15 @@ button:hover {
 }
 
 .popUpCancelButton {
-  border: none;
+  position: absolute;
+  bottom: 0px;
   margin: 5px;
-  padding: 10px 20px;
   font-size: 16px;
-  width: 50px;
-  height: 50px;
+  padding: 10px;
+  /* width: 100px;
+  height: 50px; */
   border-radius: 5px;
-  display: block;
+  display: fixed;
   background-color: #073964;
   color: white;
 }
@@ -123,11 +181,26 @@ button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
 }
 
-.board {
-  display: grid;
-  grid-template-columns: repeat(10, 30px);
-  grid-template-rows: repeat(10, 30px);
-  gap: 2px;
+.popUpSubmitButton {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin: 5px;
+  font-size: 16px;
+  padding: 10px;
+  /* width: 100px;
+  height: 50px; */
+  border-radius: 5px;
+  display: fixed;
+  background-color: #073964;
+  color: white;
+}
+
+.popUpSubmitButton:hover {
+  background-color: #022147;
+  color: #E2E2B6;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+
 }
 
 

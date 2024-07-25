@@ -9,30 +9,38 @@
 </head>
 
 <body>
-    <img src="sea.jpg" alt="sea" width="2000px" height="1000px" object-fit="cover" object-position="top">
-    <div class="topnav">
+    <img src="sea.jpg" alt="sea">
+    <!-- <div class="topnav">
         <h1>Sea Battle Game</h1>
-        <a href="/home.html">Home</a>
-        <a href="/games.html">Games</a>
-        <a href="/about.html">About</a>
+       
       </div>
-    
+     -->
+      <div class="topnav">
+        <a href="#home" class="active">Sea Battle Game</a>
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+
     <div id="menu">
         <button id="singleplayer">Singleplayer</button>
         <button id="multiplayer">Multiplayer</button>
     </div>
 
-    <div class="boards">
-        <div class="board" id="playerBoard"></div>
-        <div class="board" id="opponentBoard"></div>
-    </div>
+   
 
     <div id="message"></div>
 
     <div class="footer">
-        <p>Visit our other games at https://sigmagames.com</p>
-      </div>
+        <p>Visit our other games at <a href="https://sigmagames.com">https://sigmagames.com</a></p>
+        <!-- <a href="https://sigmagames.com" text-decoration="none">Visit our other games at https://sigmagames.com</a> -->
+    </div>
 
 </body>
-
 </html>
